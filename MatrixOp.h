@@ -1,10 +1,11 @@
 #ifndef MATRIXOP_H
 #define MATRIXOP_H
+#define SIZE 3
 
 // Basic Operations
-void mADD(int A[3][3], int B[3][3], int C[3][3]);
-void mSUB(int A[3][3], int B[3][3], int C[3][3]);
-void mMUL_EW(int A[3][3], int B[3][3], int C[3][3]);   // element-wise mulitplication
+void mADD(double A[SIZE][SIZE], double B[SIZE][SIZE], double C[SIZE][SIZE]);
+void mSUB(double A[SIZE][SIZE], double B[SIZE][SIZE], double C[SIZE][SIZE]);
+void mMUL_EW(double A[SIZE][SIZE], double B[SIZE][SIZE], double C[SIZE][SIZE]);   // element-wise mulitplication
 
 
 // Linear
@@ -14,6 +15,6 @@ void mMUL_EW(int A[3][3], int B[3][3], int C[3][3]);   // element-wise mulitplic
 
 
 // Inverse
-
+void mINV(double A[SIZE][SIZE], double B[SIZE][SIZE]);
 
 #endif
